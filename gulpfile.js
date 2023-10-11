@@ -30,7 +30,8 @@ task('sass', () => src(['./app/assets/stylesheets/*.scss'])
     outputStyle: 'compressed',
     includePaths: [
       'node_modules/govuk_frontend_toolkit/stylesheets',
-      'node_modules/govuk-elements-sass/public/sass'
+      'node_modules/govuk-elements-sass/public/sass',
+      'node_modules/hmrc-frontend/hmrc/components/timeout-dialog/timeout-dialog'
     ]
   }).on('error', sass.logError))
   .pipe(dest(`${assetsPath}/css`))

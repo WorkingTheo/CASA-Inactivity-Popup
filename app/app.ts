@@ -22,7 +22,10 @@ const app = (
   const { mount, ancillaryRouter } = configure({
     views: [viewDir],
     i18n: {
-      dirs: [localesDir],
+      dirs: [
+        localesDir,
+        path.resolve(__dirname, '../node_modules/hmrc-frontend'),
+      ],
       locales: ['en'],
     },
     session: {
