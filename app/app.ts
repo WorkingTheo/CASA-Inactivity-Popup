@@ -20,12 +20,9 @@ const app = (
   const plan = new Plan();
 
   const { mount, ancillaryRouter } = configure({
-    views: [viewDir],
+    views: [viewDir, path.resolve(__dirname, '../node_modules/hmrc-frontend'),],
     i18n: {
-      dirs: [
-        localesDir,
-        path.resolve(__dirname, '../node_modules/hmrc-frontend'),
-      ],
+      dirs: [localesDir],
       locales: ['en'],
     },
     session: {

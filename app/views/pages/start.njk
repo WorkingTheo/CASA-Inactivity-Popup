@@ -11,13 +11,14 @@
   </h1>
 
   {{ hmrcTimeoutDialog ({
-    timeout: 70,
-    countdown: 68,
-    keepAliveUrl: "?continue=true",
-    signOutUrl: "?lang=English",
-    language: "en"
-  }) }}
-
+  timeout: 70,
+  countdown: 68,
+  keepAliveUrl: "?continue=true",
+  signOutUrl: "?lang=English",
+  keepAliveButtonText: "Continue checking what help you can get with childcare costs",
+  signOutButtonText: "Delete your answers",
+  language: "en"
+}) }}
 
   {# <script nonce="{{ cspNonce }}" defer>
     function getCookie(name) {

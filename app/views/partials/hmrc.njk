@@ -1,0 +1,13 @@
+<script {%- if cspNonce %} nonce="{{ cspNonce }}" {% endif -%} src="node_modules/hmrc-frontend/hmrc/all.js"></script>
+<script {%- if cspNonce %} nonce="{{ cspNonce }}" {% endif -%}>
+  document.addEventListener('DOMContentLoaded', () => {
+    const $TimeoutDialog = document.querySelector('meta[name="hmrc-timeout-dialog"]');
+    if ($TimeoutDialog) {
+      new HMRCFrontend
+        .TimeoutDialog($TimeoutDialog)
+        .init();
+    }
+  });
+
+  console.log('hmrc');
+</script>

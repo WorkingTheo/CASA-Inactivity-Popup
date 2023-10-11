@@ -21,6 +21,7 @@ expressApp.use('/css', express.static(path.resolve(__dirname, './public/css')));
 expressApp.use('/assets/js', express.static(path.resolve(__dirname, './public/javascript')));
 expressApp.use('/assets/images', express.static(path.resolve(__dirname, './public/images')));
 expressApp.use('/assets/fonts', express.static(path.resolve(__dirname, './public/fonts')));
+expressApp.use('/node_modules/hmrc-frontend', express.static(path.resolve(__dirname, '../node_modules/hmrc-frontend')))
 
 /**
  * since we are using TypeScript, we can declare a custom 'environment' module, which allows us to 
