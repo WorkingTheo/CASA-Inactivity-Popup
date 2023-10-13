@@ -10,5 +10,6 @@ In order to implement this functionality, you need to:
 - Add styles in the `sass` gulp task (`gulpfile.js` line 34)
 - Add views directory (`app.ts` line 23)
 - Expose static assets (`server.ts` line 24)
+- Add `@import` statement to css (`app/assets/stylesheets/application.scss` line 2)
 - Add `hmrc.njk` file and `include` it in layout `head` (`main.njk` and `journey.njk` line 6)
 - Call `hmrcTimeoutDialog` macro (`start.njk`)
